@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad | IronLog</title>
+  <style>
+    :root {
+      --bg: #0b1120;
+      --card-bg: #1e293b;
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --accent: #10b981;
+      --accent-glow: rgba(16, 185, 129, 0.15);
+      --border: #334155;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f8fafc;
+        --card-bg: #ffffff;
+        --text: #0f172a;
+        --text-muted: #64748b;
+        --accent: #059669;
+        --accent-glow: rgba(5, 150, 105, 0.1);
+        --border: #e2e8f0;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2.5rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-glow);
+      color: var(--accent);
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+    }
+    .date {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      color: var(--text);
+    }
+    p { margin-bottom: 1rem; }
+    ul {
+      margin-left: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+    li { margin-bottom: 0.4rem; }
+    .highlight-box {
+      background: var(--accent-glow);
+      border-left: 4px solid var(--accent);
+      padding: 1rem 1.25rem;
+      border-radius: 8px;
+      margin: 1.5rem 0;
+    }
+    .highlight-box p { margin: 0; font-weight: 500; }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      text-align: center;
+    }
+    a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span class="badge">Privacidad & Seguridad</span>
+    <h1>Política de Privacidad de IronLog</h1>
+    <p class="date">Última actualización: Septiembre de 2026</p>
+
+    <div class="highlight-box">
+      <p><strong>Resumen esencial:</strong> IronLog es una aplicación de arquitectura <em>offline-first</em> (local). Tus datos de entrenamiento, medidas y rutas GPS se guardan exclusivamente en el almacenamiento local de tu dispositivo móvil (SQLite). No recopilamos, no almacenamos en la nube y no compartimos ni vendemos ningún dato personal con terceros.</p>
+    </div>
+
+    <h2>1. Responsable del Tratamiento</h2>
+    <p>La aplicación <strong>IronLog</strong> es desarrollada y mantenida como un proyecto independiente orientado al fitness y la privacidad. Para cualquier consulta referente a la privacidad, puedes contactar con nosotros mediante el correo electrónico facilitado en la ficha de Google Play Store.</p>
+
+    <h2>2. Datos que procesa la Aplicación</h2>
+    <p>IronLog funciona sin necesidad de registro ni creación de cuenta de usuario. La aplicación opera con los siguientes datos:</p>
+    <ul>
+      <li><strong>Datos de entrenamiento:</strong> Ejercicios, series, repeticiones, cargas (kg/lbs), notas y rutinas creadas por el usuario.</li>
+      <li><strong>Métricas corporales:</strong> Peso corporal y porcentaje de grasa introducidos voluntariamente para el seguimiento del progreso.</li>
+      <li><strong>Datos de Ubicación y GPS:</strong> Únicamente si inicias un entrenamiento al aire libre (carrera, ciclismo, caminata), la aplicación utiliza el sensor GPS del dispositivo para registrar la distancia, ritmo, elevación y trazado de la ruta. Estos datos se procesan en primer plano (y en segundo plano mediante un servicio en primer plano si la pantalla se apaga durante la actividad) y se guardan únicamente en la base de datos local de tu teléfono.</li>
+    </ul>
+
+    <h2>3. Almacenamiento Local y Privacidad de los Datos</h2>
+    <p>Todos los registros generados se almacenan en una base de datos local <strong>SQLite</strong> dentro del espacio protegido de la aplicación en el dispositivo del usuario. IronLog no dispone de servidores externos de analítica, ni telemetría ni rastreadores de publicidad.</p>
+    <p>El usuario tiene el control total de sus datos: puede exportar una copia de seguridad en formato JSON, importarla o borrarla completamente en cualquier momento desde la sección de <em>Ajustes</em> de la aplicación.</p>
+
+    <h2>4. Permisos del Dispositivo</h2>
+    <p>Para ofrecer sus funciones esenciales, IronLog puede solicitar los siguientes permisos en Android:</p>
+    <ul>
+      <li><strong>Ubicación precisa y aproximada (GPS):</strong> Necesario exclusivamente para medir distancia, velocidad y dibujar rutas en entrenamientos exteriores. No se utiliza para publicidad ni seguimiento comercial.</li>
+      <li><strong>Servicio en primer plano (Foreground Service):</strong> Permite que la grabación GPS y el temporizador de descanso continúen operando de manera fiable mientras la pantalla está apagada durante una sesión activa.</li>
+      <li><strong>Vibración / Respuesta háptica:</strong> Utilizado para avisar al usuario cuando el temporizador de descanso entre series finaliza.</li>
+      <li><strong>Mantener pantalla activa (Wake Lock):</strong> Opcional, para evitar que la pantalla se apague mientras el usuario consulta sus ejercicios en una sesión activa.</li>
+      <li><strong>Notificaciones:</strong> Para mostrar el estado de la sesión activa o el aviso del cronómetro.</li>
+    </ul>
+
+    <h2>5. Divulgación a Terceros</h2>
+    <p>IronLog <strong>no comparte, no vende ni transfiere</strong> ningún tipo de información personal, biométrica, deportiva ni de ubicación a ninguna empresa, anunciante o red de analítica de terceros.</p>
+
+    <h2>6. Menores de Edad</h2>
+    <p>IronLog no recopila intencionadamente información de menores de 13 años. Dado que la aplicación no requiere cuentas ni transmite información por internet, ningún dato de menores es recolectado en servidores externos.</p>
+
+    <h2>7. Derechos del Usuario (RGPD / CCPA)</h2>
+    <p>Conforme a la normativa aplicable (incluyendo el Reglamento General de Protección de Datos de la Unión Europea):</p>
+    <ul>
+      <li>Tienes derecho a acceder, exportar y descargar todos tus datos en cualquier momento mediante la herramienta de copia de seguridad integrada.</li>
+      <li>Tienes derecho a suprimir todos tus datos de forma instantánea pulsando la opción <em>Borrar datos locales</em> en los ajustes de la aplicación o desinstalando la aplicación de tu dispositivo.</li>
+    </ul>
+
+    <h2>8. Cambios en esta Política</h2>
+    <p>Cualquier actualización futura de esta política se publicará en esta misma página con la fecha de revisión actualizada.</p>
+
+    <footer>
+      <p>&copy; 2026 IronLog. Todos los derechos reservados. | <a href="terms.html">Términos y Exención de Responsabilidad</a></p>
+    </footer>
+  </div>
+</body>
+</html>

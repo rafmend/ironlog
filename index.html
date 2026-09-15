@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IronLog — Registro de Fuerza y Entrenamientos Offline</title>
+  <style>
+    :root {
+      --bg: #0b1120;
+      --card-bg: #1e293b;
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --accent: #10b981;
+      --accent-glow: rgba(16, 185, 129, 0.15);
+      --border: #334155;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f8fafc;
+        --card-bg: #ffffff;
+        --text: #0f172a;
+        --text-muted: #64748b;
+        --accent: #059669;
+        --accent-glow: rgba(5, 150, 105, 0.1);
+        --border: #e2e8f0;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 2.5rem 1rem;
+    }
+    .container {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .logo-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--accent-glow);
+      color: var(--accent);
+      padding: 0.35rem 1rem;
+      border-radius: 9999px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+    h1 {
+      font-size: 2.75rem;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.75rem;
+      background: linear-gradient(135deg, var(--text) 30%, var(--accent) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p.lead {
+      color: var(--text-muted);
+      font-size: 1.15rem;
+      max-width: 600px;
+      margin: 0 auto 1.5rem auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 2.5rem;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    }
+    .card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: var(--text);
+    }
+    .card p {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+    }
+    .legal-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 2rem;
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 10px;
+      font-weight: 700;
+      text-decoration: none;
+      margin: 0.5rem;
+      transition: opacity 0.2s;
+    }
+    .btn:hover { opacity: 0.9; }
+    .btn-secondary {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo-badge">⚡ IronLog v1.8</div>
+      <h1>Tu entrenamiento. Tus datos. Cero nubes.</h1>
+      <p class="lead">La aplicación de seguimiento de fuerza y carrera diseñada para atletas que valoran la velocidad, la privacidad y el funcionamiento 100% offline.</p>
+    </header>
+
+    <div class="grid">
+      <div class="card">
+        <h3>🔒 100% Privado y Offline</h3>
+        <p>Todos tus entrenamientos, marcas personales y métricas corporales se guardan localmente en tu teléfono mediante SQLite. Sin cuentas obligatorias ni servidores de terceros.</p>
+      </div>
+      <div class="card">
+        <h3>🏋️ Registro de Series Fluido</h3>
+        <p>Números fantasma automáticos de tu última sesión, calculadora de discos olímpicos, series de aproximación y dropsets, y temporizador de descanso con vibración háptica.</p>
+      </div>
+      <div class="card">
+        <h3>🗺️ Seguimiento GPS Exterior</h3>
+        <p>Registra tus carreras, paseos y salidas en bicicleta con telemetría en tiempo real: distancia, ritmo medio, elevación y parciales por kilómetro.</p>
+      </div>
+      <div class="card">
+        <h3>📚 Biblioteca de 150+ Ejercicios</h3>
+        <p>Instrucciones de preparación, ejecución y errores frecuentes en español castellano con guía anatómica de músculos principales y secundarios.</p>
+      </div>
+    </div>
+
+    <div class="legal-card">
+      <h2>Soporte y Enlaces Legales</h2>
+      <p style="color: var(--text-muted); margin: 0.75rem 0 1.5rem 0;">Información de transparencia, condiciones de servicio y protección de datos para usuarios de Google Play Store.</p>
+      <div>
+        <a class="btn" href="privacy.html">Política de Privacidad</a>
+        <a class="btn btn-secondary" href="terms.html">Términos y Exención de Responsabilidad</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 IronLog. Desarrollado con pasión y privacidad. | <a href="privacy.html">Privacidad</a> · <a href="terms.html">Términos de Uso</a></p>
+    </footer>
+  </div>
+</body>
+</html>
