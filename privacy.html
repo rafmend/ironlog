@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Política de Privacidad | IronLog</title>
+  <title>Privacy Policy | IronLog</title>
   <style>
     :root {
       --bg: #0b1120;
@@ -101,57 +101,57 @@
 </head>
 <body>
   <div class="container">
-    <span class="badge">Privacidad & Seguridad</span>
-    <h1>Política de Privacidad de IronLog</h1>
-    <p class="date">Última actualización: Septiembre de 2026</p>
+    <span class="badge">Privacy & Security</span>
+    <h1>IronLog Privacy Policy</h1>
+    <p class="date">Last Updated: September 2026</p>
 
     <div class="highlight-box">
-      <p><strong>Resumen esencial:</strong> IronLog es una aplicación de arquitectura <em>offline-first</em> (local). Tus datos de entrenamiento, medidas y rutas GPS se guardan exclusivamente en el almacenamiento local de tu dispositivo móvil (SQLite). No recopilamos, no almacenamos en la nube y no compartimos ni vendemos ningún dato personal con terceros.</p>
+      <p><strong>Executive Summary:</strong> IronLog is built with an <em>offline-first</em>, privacy-focused architecture. Your workouts, body metrics, and GPS routes reside solely on your device in a local SQLite database. We do not collect, cloud-host, sell, or share any personal data with third parties.</p>
     </div>
 
-    <h2>1. Responsable del Tratamiento</h2>
-    <p>La aplicación <strong>IronLog</strong> es desarrollada y mantenida como un proyecto independiente orientado al fitness y la privacidad. Para cualquier consulta referente a la privacidad, puedes contactar con nosotros mediante el correo electrónico facilitado en la ficha de Google Play Store.</p>
+    <h2>1. Data Controller</h2>
+    <p><strong>IronLog</strong> is an independently developed application focused on athletic strength tracking and user privacy. For any questions regarding your privacy, contact the developer email provided on the Google Play Store listing.</p>
 
-    <h2>2. Datos que procesa la Aplicación</h2>
-    <p>IronLog funciona sin necesidad de registro ni creación de cuenta de usuario. La aplicación opera con los siguientes datos:</p>
+    <h2>2. Data Handled by the Application</h2>
+    <p>IronLog operates without user accounts or mandatory registration. It processes the following data:</p>
     <ul>
-      <li><strong>Datos de entrenamiento:</strong> Ejercicios, series, repeticiones, cargas (kg/lbs), notas y rutinas creadas por el usuario.</li>
-      <li><strong>Métricas corporales:</strong> Peso corporal y porcentaje de grasa introducidos voluntariamente para el seguimiento del progreso.</li>
-      <li><strong>Datos de Ubicación y GPS:</strong> Únicamente si inicias un entrenamiento al aire libre (carrera, ciclismo, caminata), la aplicación utiliza el sensor GPS del dispositivo para registrar la distancia, ritmo, elevación y trazado de la ruta. Estos datos se procesan en primer plano (y en segundo plano mediante un servicio en primer plano si la pantalla se apaga durante la actividad) y se guardan únicamente en la base de datos local de tu teléfono.</li>
+      <li><strong>Workout Data:</strong> Exercises, sets, repetitions, loads (kg/lbs), notes, and custom workout routines created by you.</li>
+      <li><strong>Body Metrics:</strong> Body weight and body fat percentage voluntarily logged to track fitness progression.</li>
+      <li><strong>Location & GPS Data:</strong> Only if you explicitly initiate an outdoor tracking session (running, cycling, walking), the app accesses your device's GPS sensor to calculate distance, pace, elevation, and route coordinates. This data is handled strictly on-device (in foreground or via a foreground service if your screen turns off during a run) and is stored exclusively in your local database.</li>
     </ul>
 
-    <h2>3. Almacenamiento Local y Privacidad de los Datos</h2>
-    <p>Todos los registros generados se almacenan en una base de datos local <strong>SQLite</strong> dentro del espacio protegido de la aplicación en el dispositivo del usuario. IronLog no dispone de servidores externos de analítica, ni telemetría ni rastreadores de publicidad.</p>
-    <p>El usuario tiene el control total de sus datos: puede exportar una copia de seguridad en formato JSON, importarla o borrarla completamente en cualquier momento desde la sección de <em>Ajustes</em> de la aplicación.</p>
+    <h2>3. Local Storage & Zero Third-Party Telemetry</h2>
+    <p>All recorded logs are stored in a sandboxed local <strong>SQLite</strong> database on your phone. IronLog does not operate external analytics servers, user profiling trackers, or ad-targeting software.</p>
+    <p>You retain full data sovereignty: you can export all records into an unencrypted standard JSON backup, restore backups, or erase all data at any time from the in-app <em>Settings</em> menu.</p>
 
-    <h2>4. Permisos del Dispositivo</h2>
-    <p>Para ofrecer sus funciones esenciales, IronLog puede solicitar los siguientes permisos en Android:</p>
+    <h2>4. Android Device Permissions</h2>
+    <p>To provide its core tracking capabilities, IronLog may request the following standard Android permissions:</p>
     <ul>
-      <li><strong>Ubicación precisa y aproximada (GPS):</strong> Necesario exclusivamente para medir distancia, velocidad y dibujar rutas en entrenamientos exteriores. No se utiliza para publicidad ni seguimiento comercial.</li>
-      <li><strong>Servicio en primer plano (Foreground Service):</strong> Permite que la grabación GPS y el temporizador de descanso continúen operando de manera fiable mientras la pantalla está apagada durante una sesión activa.</li>
-      <li><strong>Vibración / Respuesta háptica:</strong> Utilizado para avisar al usuario cuando el temporizador de descanso entre series finaliza.</li>
-      <li><strong>Mantener pantalla activa (Wake Lock):</strong> Opcional, para evitar que la pantalla se apague mientras el usuario consulta sus ejercicios en una sesión activa.</li>
-      <li><strong>Notificaciones:</strong> Para mostrar el estado de la sesión activa o el aviso del cronómetro.</li>
+      <li><strong>Precise & Approximate Location (GPS):</strong> Strictly required for real-time route tracing, speed, and distance calculations during outdoor endurance sessions. Never utilized for marketing or tracking outside active sessions.</li>
+      <li><strong>Foreground Service:</strong> Keeps the outdoor GPS recorder and workout rest timer operating reliably if your screen locks during an active session.</li>
+      <li><strong>Vibrate / Haptics:</strong> Provides tactile feedback when the rest timer reaches zero.</li>
+      <li><strong>Wake Lock:</strong> Prevents screen timeout during active workout sessions when enabled in settings.</li>
+      <li><strong>Post Notifications:</strong> Displays persistent status cards for active workouts or rest countdown alerts.</li>
     </ul>
 
-    <h2>5. Divulgación a Terceros</h2>
-    <p>IronLog <strong>no comparte, no vende ni transfiere</strong> ningún tipo de información personal, biométrica, deportiva ni de ubicación a ninguna empresa, anunciante o red de analítica de terceros.</p>
+    <h2>5. Third-Party Sharing</h2>
+    <p>IronLog <strong>does not share, transmit, rent, or sell</strong> any user information, metrics, or location points to advertisers, third-party brokers, or cloud platforms.</p>
 
-    <h2>6. Menores de Edad</h2>
-    <p>IronLog no recopila intencionadamente información de menores de 13 años. Dado que la aplicación no requiere cuentas ni transmite información por internet, ningún dato de menores es recolectado en servidores externos.</p>
+    <h2>6. Children's Privacy</h2>
+    <p>IronLog is not directed at children under the age of 13. Because the app does not transmit data over the Internet, no children's data is ever gathered or stored remotely.</p>
 
-    <h2>7. Derechos del Usuario (RGPD / CCPA)</h2>
-    <p>Conforme a la normativa aplicable (incluyendo el Reglamento General de Protección de Datos de la Unión Europea):</p>
+    <h2>7. User Rights (GDPR & CCPA Compliance)</h2>
+    <p>In accordance with global privacy regulations (including GDPR and CCPA):</p>
     <ul>
-      <li>Tienes derecho a acceder, exportar y descargar todos tus datos en cualquier momento mediante la herramienta de copia de seguridad integrada.</li>
-      <li>Tienes derecho a suprimir todos tus datos de forma instantánea pulsando la opción <em>Borrar datos locales</em> en los ajustes de la aplicación o desinstalando la aplicación de tu dispositivo.</li>
+      <li><strong>Right to Portability:</strong> You can export an instant JSON file containing all exercises, routines, workouts, and metrics at any time.</li>
+      <li><strong>Right to Erasure:</strong> You can purge all application records immediately via <em>Settings &gt; Clear Data</em> or by uninstalling the application from your device.</li>
     </ul>
 
-    <h2>8. Cambios en esta Política</h2>
-    <p>Cualquier actualización futura de esta política se publicará en esta misma página con la fecha de revisión actualizada.</p>
+    <h2>8. Policy Amendments</h2>
+    <p>Any future revisions to this policy will be posted on this page with an updated revision date.</p>
 
     <footer>
-      <p>&copy; 2026 IronLog. Todos los derechos reservados. | <a href="terms.html">Términos y Exención de Responsabilidad</a></p>
+      <p>&copy; 2026 IronLog. All rights reserved. | <a href="terms.html">Terms of Service & Disclaimer</a></p>
     </footer>
   </div>
 </body>
